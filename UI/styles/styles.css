@@ -26,10 +26,12 @@
     .mast p{ float: right;  margin-top: 25px; color: #ccc; font-weight: bolder;}
 
     .mast p a {  margin-left: 5px; color: #ccc; }
+    .mast p a:hover {color: #333; letter-spacing: 1px;transition: all 1s; }
+
 
     .mast p #register{  margin-left: 10px; border: 2px solid #ccc; color: #333; padding: 4px;  border-radius: 2px; background-color:  #ebedf2}
 
-
+.mast p #register:hover {color: #ccc; background-color: #333;}
     #geo input[type="text"]{
     	width: 20px; line-height: 10px;
     }
