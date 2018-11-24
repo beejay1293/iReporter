@@ -1,0 +1,34 @@
+{
+  "name": "ireporter",
+  "version": "1.0.0",
+  "description": "A full stack application that enables any/every citizen to bring any form of corruption to the notice of appropraite authorities and the general public",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beejay1293/iReporter.git"
+  },
+  "keywords": [
+    "corruption",
+    "ireporter"
+  ],
+  "author": "mobolaji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beejay1293/iReporter/issues"
+  },
+  "homepage": "https://github.com/beejay1293/iReporter/UI/",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
+  }
+}
