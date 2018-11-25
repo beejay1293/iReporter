@@ -34,4 +34,11 @@ router.post('/redflags',  (req, res, next) => {
   res.status(200).json({ status: 200, data: [{ id: req.body.id, message: 'Created red-flag record' }] });
 });
 
+router.put('/redflags/:id', (req, res, next) => {
+  const data = incident[0].redflags[req.params.id];
+  data.location = req.body.location;
+  res.status(200).json({ status: 200, data: [{ id: req.params.id, message: 'Updated red-flag records location' }] });
+
+})
+
 module.exports = router;
