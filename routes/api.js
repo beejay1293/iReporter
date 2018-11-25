@@ -22,7 +22,7 @@ router.get('/redflags', (req, res, next) => {
 router.get('/redflags/:id', (req, res, next) => {
   const data = incident[0].redflags[req.params.id];
 
-  res.status(200).json({ status: 200, data });
+  res.status(200).json({ status: 200, data: [data] });
 });
 
 
