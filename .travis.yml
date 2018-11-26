@@ -1,4 +1,5 @@
 Language: node_js
 node_js:
   - "stable"
-script: test/test.js
+script:
+  - test/test.js
