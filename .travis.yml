@@ -1,8 +1,3 @@
 Language: node_js
 node_js:
   - "stable"
-
-before_script:
-  - composer install --no-interaction
-script:
-  - test/test.js
