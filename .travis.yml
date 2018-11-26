@@ -1,3 +1,4 @@
 Language: node_js
 node_js:
-  - "stable"
+  - "iojs"
+  - "7"
