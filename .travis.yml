@@ -1,10 +1,10 @@
 Language: node_js
 node_js:
   - "node"
-  - "7"
+  - "6.11.4"
 before_install:
-  - npm i -g npm@5.5.1
+  - npm i -g npm@6.11.4
 cache: npm
 
 script:
-  - test/test.js
+  - test.js
