@@ -2,9 +2,6 @@ Language: node_js
 node_js:
   - "node"
   - "6.11.4"
-before_install:
-  - npm i -g npm
-cache: npm
 
 script:
-  - test.js
+  - gulp travis
