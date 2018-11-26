@@ -41,6 +41,13 @@ router.put('/redflags/:id/location', (req, res, next) => {
 
 })
 
+router.put('/redflags/:id/comment', (req, res, next) => {
+  const data = incident[0].redflags[req.params.id];
+  data.comment = req.body.comment;
+  res.status(200).json({ status: 200, data: [{ id: req.params.id, message: 'Updated red-flag records comment' }] });
+
+})
+
 
 
 
