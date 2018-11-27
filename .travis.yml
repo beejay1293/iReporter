@@ -1,6 +1,9 @@
 Language: node_js
 node_js:
-  - "6.11.4"
+  - "iojs"
+  - "7"
 
-before_script:
-  - composer install --no-interaction
+before_install:
+  - npm i -g npm@version-number
+
+cache: npm
