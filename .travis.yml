@@ -8,4 +8,4 @@ before_install:
 
 cache: npm
 
-script: test/test.js
+script: test.js
