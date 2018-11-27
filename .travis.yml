@@ -4,6 +4,6 @@ node_js:
   - "7"
 
 before_install:
-  - npm i -g npm@5.5.1
+  - npm i -g npm@7
 
 cache: npm
