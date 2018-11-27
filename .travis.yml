@@ -8,4 +8,5 @@ before_install:
 
 cache: npm
 
-script: mocha
+script: m
+   - test/test
