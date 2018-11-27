@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "stable"
+  - "6.4.1"
 
 
 before_install:
@@ -8,5 +8,5 @@ before_install:
 
 cache: npm
 
-script: 
+script:
    - test/test
