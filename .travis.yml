@@ -1,13 +1,12 @@
 language: node_js
 node_js:
-  - "node"
   - "stable"
 
 
 before_install:
-  - npm i -g npm@6.4.1
+  - npm i -g npm@stable
 
 cache: npm
 
 script:
-   - test
+   - mocha test
