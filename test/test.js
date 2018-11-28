@@ -17,8 +17,8 @@ describe('/DELETE redflag by id', () => {
         res.body.data[0].message.should.be.eql('red-flag record has been deleted')
         res.body.data.length.should.be.eql(1);
         done();
+      } , () => {
+        process.exit(0);
       })
   })
-}, () => {
-  process.exit(0);
 })
