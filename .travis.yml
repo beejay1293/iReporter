@@ -1,6 +1,6 @@
-Language: node_js
+language: node_js
 node_js:
-  - "6.11.4"
+  - "stable"
+script: mocha
 
-before_script:
-  - composer install --no-interaction
+after_success: "Done!"
