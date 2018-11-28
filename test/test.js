@@ -1,9 +1,22 @@
-const assert = require('assert');
+const assert = require('assert')
+const chai = require("chai");
+const chaiHttp = require('chai-http');
+const app = require('../index');
+const should = chai.should();
 
-describe('Array', function() {
-  describe('#indexOf()', function()  {
-    it('should return -1 when the value is not present', function() {
-      assert.equal([1,2,3].indexOf(4), -1);
-    });
-  });
-});
+chai.use(chaiHttp);
+
+
+describe('/GET redflag by id', () => {
+  it('it should get redflag by id', (done) => {
+    chai.request(app)
+      .get('/api/v1/redflags/:id')
+      .end((err, res) => {
+        res.should.have.status(200);
+        res.body.data.should.be.a('array')
+        res.body.data.length.should.be.eql(1);
+        done();
+        process.exit(0);
+      })
+  })
+})
