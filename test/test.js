@@ -19,7 +19,7 @@ describe('/PUT redflag', () => {
         res.body.data.length.should.be.eql(1);
 
         done();
-
+        process.exit(0)
       })
   })
 })
