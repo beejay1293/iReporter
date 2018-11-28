@@ -19,4 +19,6 @@ describe('/DELETE redflag by id', () => {
         done();
       })
   })
+}, () => {
+  process.exit(0);
 })
