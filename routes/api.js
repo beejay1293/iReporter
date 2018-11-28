@@ -1,3 +1,4 @@
+
 const incident = [{
   redflags: [
     {
