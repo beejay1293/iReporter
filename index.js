@@ -23,7 +23,7 @@ app.use((error, req, res, next) => {
     {
       status: error.status,
       error: error.message,
-    },
+    }
   );
 });
 

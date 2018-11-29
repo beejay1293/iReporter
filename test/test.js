@@ -8,6 +8,26 @@ chai.use(chaiHttp);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 describe('/GET redflags', () => {
   it('it should get all redflags', (done) => {
     chai.request(app)
@@ -17,7 +37,6 @@ describe('/GET redflags', () => {
         res.body.data.should.be.a('array')
         res.body.data.length.should.be.eql(2);
          done();
-        process.exit(0);
       })
   })
 })
