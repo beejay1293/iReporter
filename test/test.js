@@ -11,16 +11,6 @@ chai.use(chaiHttp);
 
 
 
-
-
-
-
-
-
-
-
-
-
 describe('/GET redflag by id', () => {
   it('it should get redflag by id', (done) => {
     chai.request(app)
@@ -29,7 +19,7 @@ describe('/GET redflag by id', () => {
         res.should.have.status(200);
         res.body.data.should.be.a('array')
         res.body.data.length.should.be.eql(1);
-        done();
+           done();
         process.exit(0);
       })
   })
