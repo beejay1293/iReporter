@@ -6,20 +6,6 @@ const should = chai.should();
 
 chai.use(chaiHttp);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 describe('/POST redflag', () => {
   it('it should create a redflag record', (done) => {
     chai.request(app)
