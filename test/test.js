@@ -14,27 +14,10 @@ describe('/GET redflags', () => {
         res.should.have.status(200);
         res.body.data.should.be.a('array')
         res.body.data.length.should.be.eql(2);
-         done();
+        done();
       })
   })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 describe('/POST redflag', () => {
   it('it should create a redflag record', (done) => {
     chai.request(app)
@@ -44,7 +27,7 @@ describe('/POST redflag', () => {
         res.body.data.should.be.a('array')
         res.body.data[0].should.be.a('object')
         res.body.data[0].message.should.be.eql('Created red-flag record')
-        res.body.data.length.should.be.eql(1);
+        s.body.data.length.should.be.eql(1);
 
         done();
         process.exit(0);
