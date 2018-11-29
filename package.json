@@ -9,13 +9,7 @@
     "cover": "istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
 
-  }
-"engines"{
-  "npm":"6.4.1"
-
-}
-
-  ,
+  }  ,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beejay1293/iReporter.git"
