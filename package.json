@@ -15,7 +15,7 @@
     "url": "git+https://github.com/beejay1293/iReporter.git"
   },
   "engines": {
-    "node": "6.11.4"
+    "nodemon": "1.18.3"
   },
   "keywords": [
     "corruption",
