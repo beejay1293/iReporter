@@ -28,7 +28,7 @@ app.use((error, req, res, next) => {
 });
 
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 
 module.exports = app;
