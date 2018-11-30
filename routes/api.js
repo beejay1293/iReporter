@@ -1,4 +1,3 @@
-
 const incident = [{
   redflags: [
     {
@@ -15,8 +14,6 @@ const incident = [{
 const express = require('express');
 
 const router = express.Router();
-
-
 
 router.get('/redflags/:id', (req, res, next) => {
   const data = incident[0].redflags[req.params.id];
