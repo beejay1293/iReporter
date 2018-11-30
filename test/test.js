@@ -5,7 +5,6 @@ const app = require('../index');
 const should = chai.should();
 
 chai.use(chaiHttp);
-
 describe('/DELETE redflag by id', () => {
   it('it should delete a redflag record', (done) => {
     chai.request(app)
