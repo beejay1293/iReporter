@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "cover": "istanbul cover _mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
-
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beejay1293/iReporter.git"
+  },
+  "engines": {
+    "node": "6.11.4",
+    "npm": "6.4.1",
+    "nodemon": "1.18.3"
   },
   "keywords": [
     "corruption",
@@ -41,6 +45,7 @@
     "istanbul": "^0.4.5",
     "jasmine": "^3.3.0",
     "mocha": "^5.2.0",
-    "mocha-lcov-reporter": "^1.3.0"
+    "mocha-lcov-reporter": "^1.3.0",
+    "nodemon": "^1.18.3"
   }
 }

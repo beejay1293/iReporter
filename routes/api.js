@@ -1,3 +1,4 @@
+
 const incident = [{
   redflags: [
     {
@@ -10,15 +11,33 @@ const incident = [{
   interventions: [{}],
 }];
 
-
 const express = require('express');
 
 const router = express.Router();
 
-router.post('/redflags',  (req, res, next) => {
-  incident[0].redflags.push(req.body);
-  res.status(200).json({ status: 200, data: [{ id: req.body.id, message: 'Created red-flag record' }] });
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+router.delete('/redflags/:id', (req, res, next) => {
+  const data = incident[0].redflags
+  const removed = data.splice(req.params.id, 1)
+
+  res.status(200).json({ status: 200, data: [{id: req.params.id, message: 'red-flag record has been deleted' }] })
+})
+
+
+
+
 
 
 module.exports = router;
