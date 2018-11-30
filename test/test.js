@@ -5,7 +5,6 @@ const app = require('../index');
 const should = chai.should();
 
 chai.use(chaiHttp);
-
 describe('/GET redflags', () => {
   it('it should get all redflags', (done) => {
     chai.request(app)
