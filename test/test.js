@@ -21,4 +21,4 @@ describe('/DELETE redflag by id', () => {
         process.exit(0);
       });
   });
-});
+})

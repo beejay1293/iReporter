@@ -19,12 +19,23 @@ const router = express.Router();
 
 
 
+
+
+
+
+
+
+
+
+
+
 router.delete('/redflags/:id', (req, res, next) => {
   const data = incident[0].redflags
   const removed = data.splice(req.params.id, 1)
 
   res.status(200).json({ status: 200, data: [{id: req.params.id, message: 'red-flag record has been deleted' }] })
 })
+
 
 
 
