@@ -48,16 +48,6 @@ router.put('/redflags/:id/comment', (req, res, next) => {
 
 })
 
-
-
-
-
-
-
-
-
-
-
 router.delete('/redflags/:id', (req, res, next) => {
   const data = incident[0].redflags
   const removed = data.splice(req.params.id, 1)
@@ -68,10 +58,6 @@ router.delete('/redflags/:id', (req, res, next) => {
 
 
 
-<<<<<<< HEAD
-=======
 
 
-
->>>>>>> 281561f369aea93dba98aa7358409e4a7e8f153d
 module.exports = router;

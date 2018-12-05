@@ -80,6 +80,8 @@ describe('/PUT redflag', () => {
   })
 })
 
+
+
 describe('/DELETE redflag by id', () => {
   it('it should delete a redflag record', (done) => {
     chai.request(app)
@@ -91,13 +93,7 @@ describe('/DELETE redflag by id', () => {
         res.body.data[0].message.should.be.eql('red-flag record has been deleted')
         res.body.data.length.should.be.eql(1);
         done();
-<<<<<<< HEAD
-        process.exit(0)
-      })
-  })
-=======
         process.exit(0);
       });
   });
->>>>>>> 281561f369aea93dba98aa7358409e4a7e8f153d
 })
