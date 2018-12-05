@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Edit Incident</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<link rel="shortcut icon" type="images/png" href="images/icon.png">
+	<title>Report an incident</title>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/styles.css">
+	<link rel="shortcut icon" type="images/png" href="../assets/images/icon.png">
 </head>
 <body>
 	<section>
 		<div class="mast">
 		<a href="userhome.html"><h1>i<span>Reporter</span></h1></a>
-			
+
 
 				<nav>
 		   <ul class="clearfix">
 		   	  <li><a href="userhome.html">Home</a></li>
 
-		   	  <li><a href="report.html">Report Incident</a></li>
+		   	  <li ><a href="report.html" id="active">Report Incident</a></li>
 		   	  <li><a href="view_incidents.html">View Incidents</a></li>
 
-		   	  <li><a href="#">Logout</a></li>
+		   	  <li><a href="login.html">Logout</a></li>
 		   </ul>
-			
+
 
 
 
@@ -31,48 +31,48 @@
 
 <div class="wrappers">
 	<div id="stream">
-		<h1 id="register-label"><img src="images/images2.png" width="50px" height="40px;"> Edit Incident</h1>
+		<h1 id="register-label"><img src="../assets/images/icon.png" width="50px" height="40px;"> Report an Incident</h1>
 		<hr>
-		<form id="register" action="" method="POST">
+		<form id="register" action="view_incidents.html" method="POST">
 			<div class="geo">
-				
-				<label>Edit Location:</label>
+
+				<label>Location:</label>
 				<input type="text" name="cat_name" placeholder="longitude">
 				<input type="text" name="" placeholder="lattitude">
 
 			</div>
 			<div >
-				
+
 				<label>Type:</label>
 				<select  class="select" name="Incident">
 				<option>select</option>
 				<option>Red Flag</option>
 				<option>Intervention</option>
 					</select>
-				
+
 
 			</div>
 			<div>
-				
-				<label>Add Photo:</label>
+
+				<label>Photo:</label>
 				<input type="file" name="img">
 
 			</div>
 			<div>
-				
-				<label>Add Video:</label>
+
+				<label>Video:</label>
 				<input type="file" name="vid" >
 
 			</div>
 			<div>
-				
-				<label>Edit Comment:</label>
+
+				<label>Comment:</label>
 				<textarea></textarea>
 
 			</div>
-			
 
-       <button>Submit</button>
+
+       <button type="submit">Submit</button>
 
 		</form>
 	</div>

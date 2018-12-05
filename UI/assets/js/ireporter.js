@@ -1,6 +1,6 @@
  const myImage = document.getElementById("myImage");
 
-  var imageArray = ["images/sayno1.jpg", "images/sayno2.jpg"];
+  var imageArray = ["../assets/images/sayno11.png", "../assets/images/sayno2.jpg", "../assets/images/Corruption.png"];
 
   var imageIndex = 0;
 
@@ -9,13 +9,14 @@
         ;
         imageIndex++;
 
+
         if( imageIndex >= imageArray.length){
                imageIndex = 0;
 
 
         }
 
-  	
+
   }
 
   var intervalHandler = setInterval(changeImage, 2000);
@@ -24,6 +25,4 @@
     clearInterval(intervalHandler);
 
   }
-
-
-  
+  myImage.setAttribute('style', 'transition: 0.5s')
