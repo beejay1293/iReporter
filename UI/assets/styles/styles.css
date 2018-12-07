@@ -92,6 +92,8 @@ section {
 	background-color: #16193b;
 }
 
+section.menu {height: 120px}
+
 footer{ background-color: #16193b; }
 
 .mast {
@@ -129,21 +131,25 @@ footer{ background-color: #16193b; }
 	width: 60%;
 	list-style-type: none;
 	/*outline: 1px solid #000;*/
-	margin-top: 10px;
+	margin-top: 25px;
 
 }
 
-.mast div.userid{float: right; width: 25%; margin-top: 10px; }
+.visible{ display: block !important; margin-top: 60px !important;}
+
+.visible1 {height: 250px !important;}
+
+.mast div.userid{float: right; width: 25%; margin-top: 22px; }
 @media screen and (max-width: 500px){.mast div.userid {padding-right: 30px;}}
 @media screen and (max-width: 500px){.dropdown {display: block !important;}}
-@media screen and (max-width: 500px){ .mast nav ul{display: none !important;}}
+@media screen and (max-width: 500px){ .mast nav ul{display: none ;}}
 .dropdown {
 
     float: left;
     width: 50px;
     height: 40px;
-    background-color: #fff;
-    margin-top: 10px;
+    background-color: #add5f7;
+    margin-top: 12px;
     border-radius: 5px;
      display: none;
 }

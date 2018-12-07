@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" type="images/png" href="./assets/images/icon.png">
 </head>
 <body>
-	<section>
+	<section class="menu" id="menu1">
 		<div class="mast">
 		<a href="userhome.html"><h1>i<span>Reporter</span></h1></a>
 		<div class="dropdown" id="navbar-dropdown"></div>
@@ -67,10 +67,13 @@
 		</div>
 	</footer>
 	<script type="text/javascript"> const dropdown_menu = document.getElementById('dropdown-menu');
+	const menu = document.getElementById('menu1')
    const navbar_dropdown = document.getElementById('navbar-dropdown')
 
    navbar_dropdown.addEventListener('click', () => {
-   	dropdown_menu.style.display = 'block';
+    dropdown_menu.classList.toggle('visible')
+    menu1.classList.toggle('visible1')
+  
    })
 
 </script>	

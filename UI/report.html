@@ -6,26 +6,29 @@
 	<link rel="shortcut icon" type="images/png" href="./assets/images/icon.png">
 </head>
 <body>
-	<section>
+	<section class="menu" id="menu1">
 		<div class="mast">
 		<a href="userhome.html"><h1>i<span>Reporter</span></h1></a>
-
+		<div class="dropdown" id="navbar-dropdown"></div>
+		
 
 				<nav>
-		   <ul class="clearfix">
-		   	  <li><a href="userhome.html">Home</a></li>
+		   <ul class="clearfix" id="dropdown-menu">
+		   	  <li><a href="userhome.html" >Home</a></li>
 
-		   	  <li ><a href="report.html" id="active">Report Incident</a></li>
-		   	  <li><a href="view_incidents.html">View Incidents</a></li>
+		   	  <li ><a href="report.html" >Report Incident</a></li>
+		   	  <li><a href="view_incidents.html" id="active">View Incidents</a></li>
 
 		   	  <li><a href="login.html">Logout</a></li>
+
+
 		   </ul>
 
-
-
-
 		</nav>
+
+
 		</div>
+
 
 	</section>
 
@@ -79,6 +82,18 @@
 </div>
 
 <footer class="foot">
+
+<script type="text/javascript"> const dropdown_menu = document.getElementById('dropdown-menu');
+	const menu = document.getElementById('menu1')
+   const navbar_dropdown = document.getElementById('navbar-dropdown')
+
+   navbar_dropdown.addEventListener('click', () => {
+    dropdown_menu.classList.toggle('visible')
+    menu1.classList.toggle('visible1')
+  
+   })
+
+</script>
 		<div>
 			<p>&copy; 2018 iReporter</p>
 		</div>
