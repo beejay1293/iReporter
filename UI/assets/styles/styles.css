@@ -22,6 +22,8 @@
     	margin: 0 auto 0 auto;
       color:#000;
     }
+     
+  table#tab tbody tr{ cursor: pointer; }
 
     .mast p{ float: right;  margin-top: 25px; color: #ccc; font-weight: bolder;}
 
@@ -131,9 +133,20 @@ footer{ background-color: #16193b; }
 
 }
 
-.mast div.userid{float: right; width: 20%; margin-top: 10px;}
+.mast div.userid{float: right; width: 25%; margin-top: 10px; }
+@media screen and (max-width: 500px){.mast div.userid {padding-right: 30px;}}
+@media screen and (max-width: 500px){.dropdown {display: block !important;}}
+@media screen and (max-width: 500px){ .mast nav ul{display: none !important;}}
+.dropdown {
 
-
+    float: left;
+    width: 50px;
+    height: 40px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+     display: none;
+}
 
 
 .masts nav ul {
@@ -639,3 +652,5 @@ table#tab tr td:first-of-type {
 .myImage {
 
 }
+
+@media screen and (max-width: 500px){.wrapper img {height: 200px;}}
