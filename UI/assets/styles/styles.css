@@ -502,7 +502,7 @@ table#tab {
 	/*border: 1px solid #ccc;*/
 	border-collapse: collapse;
 }
-.red{width: 60%; float: left}
+.red{width: 60%; float: left; color: red}
 
 table#tabs {
 	width: 40%;
@@ -535,6 +535,16 @@ table#tab th {
 	border-bottom: 6px solid #ccc;
 
 }
+ table#tab td {	text-transform: uppercase;
+
+ 	font-weight: bolder;
+ 	font-size: 8px;
+ 	padding: 10px;
+ 	border-bottom: 6px solid #ccc;}
+
+table#tab tbody tr {background-color: ; height: 100px; border-radius: 18px;}
+
+table#tab tbody tr#redflags {color:red; }
 
 table#tab tbody th button {background-color: #ccc; border-radius: 5px; cursor: pointer; color: #000;}
 
@@ -542,8 +552,8 @@ table#tab tbody th button a{ background-color: #ccc; border-radius: 5px; cursor:
 
 table#tab thead {background-color: #ccc;}
 
-.goto{margin-top: 10px; color: #000 ;}
-table#tabs th , table#tabs1 th{
+.goto{margin-top: 0px; color: #000 ; background-color: #ccc; padding-right: 10px; padding-left: 10px;padding-top: 20px; padding-bottom: 20px;float: right;border-radius: 30px;}
+table#tabs th , table#tabs1 th, table#tab td{
 	text-transform: uppercase;
 
 	font-weight: bolder;
@@ -581,7 +591,7 @@ table#tab td a:hover {
 }
 
 table#tab tr td:first-of-type {
-	width: 500px;
+	
 }
 
 .foot1{ width: 100%;

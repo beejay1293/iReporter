@@ -1,6 +1,6 @@
  const myImage = document.getElementById("myImage");
 
-  var imageArray = ["../assets/images/sayno11.png", "../assets/images/sayno2.jpg", "../assets/images/Corruption.png"];
+  var imageArray = ["./assets/images/sayno11.png", "./assets/images/sayno2.jpg", "./assets/images/Corruption.png"];
 
   var imageIndex = 0;
 
@@ -26,3 +26,13 @@
 
   }
   myImage.setAttribute('style', 'transition: 0.5s')
+
+
+
+  const red = document.getElementsByTagName('tr');
+
+  red.onClick = () => {
+    windows.Location =  'index.php'
+  }
+
+  document.get
