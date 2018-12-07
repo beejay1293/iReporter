@@ -4,7 +4,7 @@ const app = express();
 
 const bodyParser = require('body-parser');
 
-const routes = require('./routes/api');
+const routes = require('./routes/redflags');
 
 app.use(bodyParser.json());
 app.use('/api/v1', routes);

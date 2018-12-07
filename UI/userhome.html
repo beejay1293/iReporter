@@ -6,16 +6,17 @@
 	<link rel="shortcut icon" type="images/png" href="./assets/images/icon.png">
 </head>
 <body>
-	<section>
+	<section class="menu" id="menu1">
 		<div class="mast">
 		<a href="userhome.html"><h1>i<span>Reporter</span></h1></a>
+		<div class="dropdown" id="navbar-dropdown"></div>
 		<div class="userid">
 	 	<h3><span>Welcome<span> User</h3>
 
 	 </div>
 
 				<nav>
-		   <ul class="clearfix">
+		   <ul class="clearfix" id="dropdown-menu">
 		   	  <li><a href="userhome.html" id="active">Home</a></li>
 
 		   	  <li ><a href="report.html" >Report Incident</a></li>
@@ -65,6 +66,17 @@
 
 		</div>
 	</footer>
+	<script type="text/javascript"> const dropdown_menu = document.getElementById('dropdown-menu');
+	const menu = document.getElementById('menu1')
+   const navbar_dropdown = document.getElementById('navbar-dropdown')
+
+   navbar_dropdown.addEventListener('click', () => {
+    dropdown_menu.classList.toggle('visible')
+    menu1.classList.toggle('visible1')
+  
+   })
+
+</script>	
 	<script type="text/javascript" src="./assets/js/ireporter.js"></script>
 
 </body>
