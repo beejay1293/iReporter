@@ -6,13 +6,15 @@
 	<link rel="shortcut icon" type="images/png" href="./assets/images/icon.png">
 </head>
 <body>
-	<section>
+	<section class="menu" id="menu1">
 		<div class="mast">
 		<a href="adminhome.html"><h1>i<span>Reporter</span></h1></a>
+		<div class="dropdown" id="navbar-dropdown"></div>
 
 
 				<nav>
-		   <ul class="clearfix">
+
+		 <ul class="clearfix" id="dropdown-menu">
 		   	  <li><a href="adminhome.html" >Home</a></li>
 
 
@@ -186,6 +188,26 @@
 </div>
 <footer class="foot1">
 		<div>
+
+		<script type="text/javascript">const red = document.getElementsByTagName('tr');
+   for(var r of red){
+ 	r.addEventListener('click', () => {
+ 		window.location = 'details.html'
+ 	});
+
+
+ }</script>
+		<script type="text/javascript"> const dropdown_menu = document.getElementById('dropdown-menu');
+	const menu = document.getElementById('menu1')
+   const navbar_dropdown = document.getElementById('navbar-dropdown')
+
+   navbar_dropdown.addEventListener('click', () => {
+    dropdown_menu.classList.toggle('visible')
+    menu1.classList.toggle('visible1')
+  
+   })
+
+</script>
 			<p>&copy; 2018 iReporter</p>
 
 

@@ -1,3 +1,7 @@
+   
+
+
+
  const myImage = document.getElementById("myImage");
 
   var imageArray = ["./assets/images/sayno11.png", "./assets/images/sayno2.jpg", "./assets/images/Corruption.png"];
@@ -31,8 +35,10 @@
 
   const red = document.getElementsByTagName('tr');
 
-  red.onClick = () => {
-    windows.Location =  'index.php'
-  }
 
-  document.get
+ /*for(var r of red){
+ 	alert('done')
+ 	r.addEventListener('click', () => {
+ 		window.location = 'index.html'
+ 	});
+ }*/

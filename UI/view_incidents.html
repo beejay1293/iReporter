@@ -6,33 +6,37 @@
 	<link rel="shortcut icon" type="images/png" href="./assets/images/icon.png">
 </head>
 <body>
-	<section>
+	<section class="menu" id="menu1">
 		<div class="mast">
 		<a href="userhome.html"><h1>i<span>Reporter</span></h1></a>
-
+		<div class="dropdown" id="navbar-dropdown"></div>
+		
 
 				<nav>
-		   <ul class="clearfix">
+		   <ul class="clearfix" id="dropdown-menu">
 		   	  <li><a href="userhome.html" >Home</a></li>
 
 		   	  <li ><a href="report.html" >Report Incident</a></li>
 		   	  <li><a href="view_incidents.html" id="active">View Incidents</a></li>
 
 		   	  <li><a href="login.html">Logout</a></li>
+
+
 		   </ul>
 
-
-
-
 		</nav>
+
+
 		</div>
+
 
 	</section>
 
 
 <div class="wrappers">
-<h1 id="register-label"><img src="./assets/images/images2.png" width="50px" height="40px;">View Incidents</h1>
+
 <div id="streams"  class="streams">
+<h1 id="register-label"><img src="./assets/images/images2.png" width="50px" height="40px;">View Incidents</h1>
  <div class="red">
 <h1>Red Flags</h1>
 </div>
@@ -135,14 +139,14 @@
 	</thead>
 
 
-	<tbody><a href="index.html">
-		<tr >
+	<tbody>
+		<tr>
 		<td>12</td>
 		<td>sunday</td>
 		<td>Mobolaji</td>
 		<td>Interventions</td>
 		<td>290.09, 293.25</td>
-		<td><a href="index.html"> <img src="./assets/images/images2.png" width="50px" height="40px;"></a></td>
+		<td> <img src="./assets/images/images2.png" width="50px" height="40px;"></a></td>
 
 		<td>Videos</td>
 		<td>draft</td>
@@ -152,7 +156,7 @@
 
 </tr></a>
 </tbody>
-</a>
+
 <tbody>
 <tr id="redflags">
 <td>12</td>
@@ -197,6 +201,26 @@
 		</div>
 
 	</footer>
+	<script type="text/javascript">const red = document.getElementsByTagName('tr');
+   for(var r of red){
+ 	r.addEventListener('click', () => {
+ 		window.location = 'details.html'
+ 	});
+
+
+ }</script>
+
+    <script type="text/javascript"> const dropdown_menu = document.getElementById('dropdown-menu');
+	const menu = document.getElementById('menu1')
+   const navbar_dropdown = document.getElementById('navbar-dropdown')
+
+   navbar_dropdown.addEventListener('click', () => {
+    dropdown_menu.classList.toggle('visible')
+    menu1.classList.toggle('visible1')
+  
+   })
+
+</script>
 	<script type="text/javascript" src="./assets/js/ireporter.js"></script>
 
 </body>
