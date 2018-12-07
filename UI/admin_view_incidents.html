@@ -2,25 +2,26 @@
 <html>
 <head>
 	<title>View Incidents</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<link rel="shortcut icon" type="images/png" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+	<link rel="shortcut icon" type="images/png" href="./assets/images/icon.png">
 </head>
 <body>
 	<section>
 		<div class="mast">
 		<a href="adminhome.html"><h1>i<span>Reporter</span></h1></a>
-			
+
 
 				<nav>
 		   <ul class="clearfix">
 		   	  <li><a href="adminhome.html" >Home</a></li>
 
-		   	  
-		   	  <li><a href="admin_view_incidents.html" id="active">View Incidents</a></li>
 
-		   	  <li><a href="#">Logout</a></li>
+		   	  <li><a href="admin_view_incidents.html" id="active">View Incidents</a></li>
+					<li ><a href="Admin_register.html" >Add Admin</a></li>
+
+		   	  <li><a href="admin_login.html">Logout</a></li>
 		   </ul>
-			
+
 
 
 
@@ -31,7 +32,8 @@
 
 
 <div class="wrappers">
-<h1 id="register-label"><img src="images/images2.png" width="50px" height="40px;">View Incidents</h1>
+
+<h1 id="register-label"><img src="./assets/images/images2.png" width="50px" height="40px;">View Incidents</h1>
 
 <div id="streams"  class="streams">
  <div class="red">
@@ -58,11 +60,11 @@
 		<th>Under Investigation</th>
 		<th>Resolved</th>
 		<th>Rejected</th>
-		
-		
-	
+
+
+
 </tr>
-	
+
 	</thead>
 	<tbody>
 			<tr>
@@ -70,9 +72,9 @@
 		<th>3</th>
 		<th>3</th>
 		<th>3</th>
-		
-		
-	
+
+
+
 </tr>
 
 	</tbody>
@@ -88,11 +90,11 @@
 		<th>Under Investigation</th>
 		<th>Resolved</th>
 		<th>Rejected</th>
-		
-		
-	
+
+
+
 </tr>
-	
+
 	</thead>
 	<tbody>
 			<tr>
@@ -100,9 +102,9 @@
 		<th>3</th>
 		<th>3</th>
 		<th>3</th>
-		
-		
-	
+
+
+
 </tr>
 
 	</tbody>
@@ -112,11 +114,11 @@
 
 </div>
 
-<hr>
+
 <div id="streams"  class="stream">
 <table id="tab">
 	<thead>
-		<tr>
+		<tr >
 		<th>Incident id</th>
 		<th>Created On</th>
 		<th>Created by</th>
@@ -125,15 +127,47 @@
 		<th>images</th>
 		<th>Videos</th>
 		<th>status</th>
-		<th>Change Status</th>
-		
-	
+		<th>Comment</th>
+		 <th></th>
+
 </tr>
-	
+
 	</thead>
 	<tbody>
-		
 
+		<tr id="redflags">
+			<th>12</th>
+			<th>sunday</th>
+			<th>Mobolaji</th>
+			<th>Redflag</th>
+			<th>290.09, 293.25</th>
+			<th><img src="./assets/images/images2.png" width="50px" height="40px;"></th>
+			<th>Videos</th>
+			<th>draft</th>
+			<th>happening at ikeja right now, a man is moving with over a million dollars, He is driving a red G-wagon and he is currently at allen avenue</th>
+
+		  <th><button type="submit">Change status</button></th>
+
+
+
+</tr>
+
+		<tr>
+			<th>12</th>
+			<th>sunday</th>
+			<th>Mobolaji</th>
+			<th>Intervention</th>
+			<th>290.09, 293.25</th>
+			<th><img src="./assets/images/images2.png" width="50px" height="40px;"></th>
+			<th>Videos</th>
+			<th>draft</th>
+			<th>happening at ikeja right now, a man is moving with over a million dollars, He is driving a red G-wagon and he is currently at allen avenue</th>
+
+		  <th><button type="submit"><a href="edit_status.html">Change status</a></button></th>
+
+
+
+</tr>
 	</tbody>
 
 </table>
@@ -144,7 +178,7 @@
 <a href="#">2</a>
 <span>3</span>
 <a href="#">2</a>
-	
+
 
 </div>
 
@@ -157,7 +191,7 @@
 
 		</div>
 	</footer>
-	<script type="text/javascript" src="js/ireporter.js"></script>
-   
+	<script type="text/javascript" src="../assets/js/ireporter.js"></script>
+
 </body>
 </html>

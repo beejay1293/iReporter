@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>View Incidents</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<link rel="shortcut icon" type="images/png" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+	<link rel="shortcut icon" type="images/png" href="./assets/images/icon.png">
 </head>
 <body>
 	<section>
 		<div class="mast">
 		<a href="userhome.html"><h1>i<span>Reporter</span></h1></a>
-			
+
 
 				<nav>
 		   <ul class="clearfix">
@@ -18,9 +18,9 @@
 		   	  <li ><a href="report.html" >Report Incident</a></li>
 		   	  <li><a href="view_incidents.html" id="active">View Incidents</a></li>
 
-		   	  <li><a href="#">Logout</a></li>
+		   	  <li><a href="login.html">Logout</a></li>
 		   </ul>
-			
+
 
 
 
@@ -31,7 +31,7 @@
 
 
 <div class="wrappers">
-<h1 id="register-label"><img src="images/images2.png" width="50px" height="40px;">View Incidents</h1>
+<h1 id="register-label"><img src="./assets/images/images2.png" width="50px" height="40px;">View Incidents</h1>
 <div id="streams"  class="streams">
  <div class="red">
 <h1>Red Flags</h1>
@@ -57,11 +57,11 @@
 		<th>Under Investigation</th>
 		<th>Resolved</th>
 		<th>Rejected</th>
-		
-		
-	
+
+
+
 </tr>
-	
+
 	</thead>
 	<tbody>
 			<tr>
@@ -69,9 +69,9 @@
 		<th>3</th>
 		<th>3</th>
 		<th>3</th>
-		
-		
-	
+
+
+
 </tr>
 
 	</tbody>
@@ -87,11 +87,11 @@
 		<th>Under Investigation</th>
 		<th>Resolved</th>
 		<th>Rejected</th>
-		
-		
-	
+
+
+
 </tr>
-	
+
 	</thead>
 	<tbody>
 			<tr>
@@ -99,9 +99,9 @@
 		<th>3</th>
 		<th>3</th>
 		<th>3</th>
-		
-		
-	
+
+
+
 </tr>
 
 	</tbody>
@@ -112,7 +112,7 @@
 </div>
 
 
-<hr>
+
 <div id="streams"  class="steams">
 <table id="tab">
 	<thead>
@@ -125,14 +125,49 @@
 		<th>images</th>
 		<th>Videos</th>
 		<th>status</th>
-		<th>Edit</th>
-		<th>Delete</th>
-	
+		<th>comment</th>
+		<th></th>
+		<th></th>
+
+
 </tr>
-	
+
 	</thead>
-	<tbody>
-		
+
+
+	<tbody><a href="index.html">
+		<tr >
+		<td>12</td>
+		<td>sunday</td>
+		<td>Mobolaji</td>
+		<td>Interventions</td>
+		<td>290.09, 293.25</td>
+		<td><a href="index.html"> <img src="./assets/images/images2.png" width="50px" height="40px;"></a></td>
+
+		<td>Videos</td>
+		<td>draft</td>
+		<td>happening at ikeja right now, a man is moving with over a million dollars, He is driving a red G-wagon and he is currently at allen avenue</td>
+		<td><button type="submit"> <a href="edit_incident.html">edit</a> </button></td>
+		<td><button><a href="#">delete</a></button></td>
+
+</tr></a>
+</tbody>
+</a>
+<tbody>
+<tr id="redflags">
+<td>12</td>
+<td>sunday</td>
+<td>Mobolaji</td>
+<td>Redflag</td>
+<td>290.09, 293.25</td>
+<td><img src="./assets/images/images2.png" width="50px" height="40px;"></th>
+<td>Videos</td>
+<td>draft</td>
+<td>happening at ikeja right now, a man is moving with over a million dollars, He is driving a red G-wagon and he is currently at allen avenue</td>
+<td><button type="submit"> <a href="edit_incident.html">edit</a></td>
+<td><button><a href="#">delete</a></button></td>
+
+</tr>
 
 	</tbody>
 
@@ -144,20 +179,25 @@
 <a href="#">2</a>
 <span>3</span>
 <a href="#">2</a>
-	
+
+
+</div>
+<div class="goto">
+	<h4><a href="report.html"> report an incident</a></h4>
+</div>
 
 </div>
 
 
-</div>
 <footer class="foot1">
 		<div>
 			<p>&copy; 2018 iReporter</p>
 
 
 		</div>
+
 	</footer>
-	<script type="text/javascript" src="js/ireporter.js"></script>
-   
+	<script type="text/javascript" src="./assets/js/ireporter.js"></script>
+
 </body>
 </html>
